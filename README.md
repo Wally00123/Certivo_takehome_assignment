@@ -22,9 +22,9 @@ For the more in-depth version:
 
 ## How to run the application
 
-In short: Run the main.py using Python (requires dependencies/libraries to be already installed locally)
+In short: Run the main.py using Python (requires dependencies/libraries to be already installed locally, all libraries can be found via pip)
 
-In more detail: You can directly run the program by calling **main.py** using Python, however this does require all relevant libraries to be installed (running will notify user of missing libraries)
+In more detail: You can directly run the program by calling **main.py** using Python, however this does require all relevant libraries to be installed (running will notify user of missing libraries, use pip install *missing library* to install them)
 
 Once the program is running, use the command interface to "chat" with the chatbot, enter the phrase "Quit" (case sensitive) to exit the program
 
