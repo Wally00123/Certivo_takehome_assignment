@@ -22,11 +22,11 @@ For the more in-depth version:
 
 ## How to run the application
 
-In short: Run the .exe (dist/main.exe) OR run main.py using Python (requires dependencies/libraries to be already installed locally)
+In short: Run the main.py using Python (requires dependencies/libraries to be already installed locally)
 
-In more detail: For the easiest solution, run the included .exe file (Windows only at this time, will include Linux later) and program will start up: this is found in "dist/main.exe" - for an alternative solution, you can directly run the program by calling **main.py** using Python, however this does require all relevant libraries to be installed (running will notify user of missing libraries)
+In more detail: You can directly run the program by calling **main.py** using Python, however this does require all relevant libraries to be installed (running will notify user of missing libraries)
 
-Regardless of which option you choose, once the program is running, use the command interface to "chat" with the chatbot, enter the phrase "Quit" (case sensitive) to exit the program
+Once the program is running, use the command interface to "chat" with the chatbot, enter the phrase "Quit" (case sensitive) to exit the program
 
 ---
 
