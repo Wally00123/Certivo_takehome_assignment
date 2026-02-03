@@ -163,11 +163,15 @@ def get_data():
     pdf_files = []
     html_files = []
 
-    for filename in glob.glob('Files\\*.pdf', recursive=True):
-        pdf_files.append(filename)
+    pdf_glob = glob.glob('Files\\*.pdf', recursive=True)
+    if len(pdf_glob) > 0:
+        for filename in pdf_glob:
+            pdf_files.append(filename)
 
-    for filename in glob.glob('Files\\*.html', recursive=True):
-        html_files.append(filename)
+    html_glob = glob.glob('Files\\*.html', recursive=True)
+    if len(html_glob) > 0:
+        for filename in html_glob:
+            html_files.append(filename)
 
     # print(pdf_files, html_files)
 
@@ -200,11 +204,15 @@ def get_data_words():
     pdf_files = []
     html_files = []
 
-    for filename in glob.glob('Files\\*.pdf', recursive=True):
-        pdf_files.append(filename)
+    pdf_glob = glob.glob('Files\\*.pdf', recursive=True)
+    if len(pdf_glob) > 0:
+        for filename in pdf_glob:
+            pdf_files.append(filename)
 
-    for filename in glob.glob('Files\\*.html', recursive=True):
-        html_files.append(filename)
+    html_glob = glob.glob('Files\\*.html', recursive=True)
+    if len(html_glob) > 0:
+        for filename in html_glob:
+            html_files.append(filename)
 
     # print(pdf_files, html_files)
 
@@ -231,11 +239,15 @@ def get_data_tables():
     pdf_files = []
     html_files = []
 
-    for filename in glob.glob('Files\\*.pdf', recursive=True):
-        pdf_files.append(filename)
+    pdf_glob = glob.glob('Files\\*.pdf', recursive=True)
+    if len(pdf_glob) > 0:
+        for filename in pdf_glob:
+            pdf_files.append(filename)
 
-    for filename in glob.glob('Files\\*.html', recursive=True):
-        html_files.append(filename)
+    html_glob = glob.glob('Files\\*.html', recursive=True)
+    if len(html_glob) > 0:
+        for filename in html_glob:
+            html_files.append(filename)
 
     # print(pdf_files, html_files)
 
