@@ -208,3 +208,4 @@ __marimo__/
 
 # AI Models to prevent space from being taken up
 Model/
+.gguf

@@ -5,9 +5,11 @@ llama_cpp       :   The main AI implementation for the chatbot
 parse_files.py  :   Python program that helps to parse information from 
                         pdf and html files into a format that is usable
                         by python programs like this for further use
+glob            :   for finding files, used to locate the .gguf file
 '''
 from llama_cpp import Llama
 import parse_files as pf
+import glob
 
 
 '''
@@ -18,7 +20,13 @@ Main
 '''
 def main():
     print("Loading model, please wait...\n")
-    llm = create_model()
+    model_files = glob.glob('Model\\*.gguf', recursive=True)
+
+    if len(model_files) == 0:
+        print("No valid .gguf file found in the \"Model\" folder, exiting.")
+        return
+
+    llm = create_model(model_files[0])
 
     print("Initializing Data, please wait...\n")
     data = pf.get_data_words()
@@ -48,9 +56,11 @@ Loads and creates the LLM instance locally to act as the chatbot
 '''
 def create_model(model_path:str = None):
     if model_path is None:
-        model_path="E:\\GGUF Models\\gpt-oss-20b-UD-Q4_K_XL.gguf"
+        # model_path="E:\\GGUF Models\\gpt-oss-20b-UD-Q4_K_XL.gguf"
+        print("No valid .gguf file found in the \"Model\" folder, exiting.")
+        exit(0)
 
-    llm = Llama(model_path=model_path, verbose=False, n_ctx=10000)
+    llm = Llama(model_path=model_path, verbose=False, n_ctx=64000)
 
     return llm
 
