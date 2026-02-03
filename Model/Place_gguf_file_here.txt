@@ -1,0 +1,5 @@
+Place the .gguf file(s) into this foler 
+
+The program will only run the first file found in this folder
+
+If no .gguf files are found, program will cleanly exit
