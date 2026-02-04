@@ -26,6 +26,8 @@ In short: Run the main.py using Python (requires dependencies/libraries to be al
 
 In more detail: You can directly run the program by calling **main.py** using Python, however this does require all relevant libraries to be installed (running will notify user of missing libraries, use pip install *missing library* to install them)
 
+This program is recommended with the latest python version (3.14.*) - to run in windows, right click folder, open in terminal, then type: `py .\main.py`
+
 Once the program is running, use the command interface to "chat" with the chatbot, enter the phrase "Quit" (case sensitive) to exit the program
 
 Note: If you need to install llama-cpp-python, this requires CMake - to install, do the following:
