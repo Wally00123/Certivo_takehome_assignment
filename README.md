@@ -28,6 +28,12 @@ In more detail: You can directly run the program by calling **main.py** using Py
 
 Once the program is running, use the command interface to "chat" with the chatbot, enter the phrase "Quit" (case sensitive) to exit the program
 
+Note: If you need to install llama-cpp-python, this requires CMake - to install, do the following:
+
+1. Download Visual Studios 2019 (2022 is also good)
+2. When installing, check "Desktop Development with C++" (make sure to select all optional components here, especially C++ CMake and Windows SDK), and also check "Universal Windows Platform build tools" (select all optional here as well)
+3. Wait for it to install, once finished you should be good to go with the above 'pip install llama-cpp-python'
+
 ---
 
 ## Brief explanation of approach and architecture decisions
