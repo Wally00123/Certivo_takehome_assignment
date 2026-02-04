@@ -30,7 +30,7 @@ Once the program is running, use the command interface to "chat" with the chatbo
 
 Note: If you need to install llama-cpp-python, this requires CMake - to install, do the following:
 
-1. Download Visual Studios 2019 [Link here](https://c2rsetup.officeapps.live.com/c2r/downloadVS.aspx?sku=community&channel=Release&source=VSLandingPage&version=VS2019&cid=2030)
+1. Download Visual Studios 2019 [Link here](https://c2rsetup.officeapps.live.com/c2r/downloadVS.aspx?sku=community&channel=Release&version=VS2019)
 2. When installing, check "Desktop Development with C++" (make sure to select all optional components here, especially C++ CMake and Windows SDK), and also check "Universal Windows Platform build tools" (select all optional here as well)
 3. Wait for it to install, once finished you should be good to go with the above 'pip install llama-cpp-python'
 
