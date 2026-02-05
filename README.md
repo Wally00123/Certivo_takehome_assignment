@@ -36,6 +36,13 @@ Note: If you need to install llama-cpp-python, this requires CMake - to install,
 2. When installing, check "Desktop Development with C++" (make sure to select all optional components here, especially C++ CMake and Windows SDK), and also check "Universal Windows Platform build tools" (select all optional here as well)
 3. Wait for it to install, once finished you should be good to go with the above 'pip install llama-cpp-python'
 
+Note: If you have errors with missing libraries, below are the following things to install via pip/python (pip3 can be used in place of pip):
+
+1. `pip install llama-cpp-python` or `py -m pip install llama-cpp-python`
+2. `pip install glob` or `py -m pip install glob`
+3. `pip install pdfplumber` or `py -m pip install pdfplumber`
+4. `pip install bs4` or `py -m pip install bs4`
+
 ---
 
 ## Brief explanation of approach and architecture decisions
